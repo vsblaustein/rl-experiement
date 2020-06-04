@@ -10,7 +10,7 @@
 # Training Loop
 ## Taking Action
 * The training loop iterates 1,000,000 times.
-* If a random number is less than or equal to the epsilon value or the current frame is less than 3,200, a random action is taken. Otherwise, the model predicts the best action by taking the one with the highest q value. 
+* If a random number is less than or equal to the epsilon value or the current frame is less than 3,200, a random action is taken. Otherwise, the model predicts the best action by taking the one with the highest Q value. 
 ## Observing the Agent after Action
 * The action information is obtained with the action chosen and the state.
   * It is a 4 value tuple (state_next, reward, game_over, info).
