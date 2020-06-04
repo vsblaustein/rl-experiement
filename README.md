@@ -12,7 +12,8 @@
 * The training loop iterates 1,000,000 times.
 * If a random number is less than or equal to the epsilon value or the current frame is less than 3,200, a random action is taken. Otherwise, the model predicts the best action by taking the one with the highest q value. 
 ## Observing the Agent after Action
-* The action information is obtained with the action chosen and the state as a 4 value tuple (state_next, reward, game_over, info).
+* The action information is obtained with the action chosen and the state. 
+ * It is a 4 value tuple (state_next, reward, game_over, info).
 * If epsilon is greater than 0.0001 and the current frame is greater than 3,200, epsilon is reduced by .0999/300,000. This allows for at least 3,200 frames of selfplay with exploration before reducing the epsilon value to favor exploitation.
 ## Training the Neural Network
 * Training begins once the current frame is greater than 3,200.
